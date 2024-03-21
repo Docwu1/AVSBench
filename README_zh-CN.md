@@ -1,13 +1,22 @@
 ## wwh的说明
 目前完成了FCN,deeplabv3(v3_plus显存不够，batch_size得调成1或者是2就是随机梯度下降了),和PSPnet，目前来看pspnet可能效果更好一些，前面两者训练60轮，pspnet训练了120轮，目前pspnet比较好。
+
 训练和调用都可以查看底下的readme。
+
 在训练和调用中可能遇到的问题：在原github链接的issues中都很容易找到。直接对着查就可以。
+
 可能的问题1：运行时出现local_rank的问题，issues里面有解决方案。
+
 可能的问题2：模型找不到，.torch文件夹直接放到windows的根目录下，e.g:C:\Users\Wu Kevin\.torch\models
+
 有条件的可以训练一些其他的模型（下面有很多），可以看看哪个效果好，建议训练不低于100轮。
+
 下一步：
+
 1.提高正确度，三个模型的pixacc都比较高（90+），但是miou都比较低，（60~70+）
+
 2.用gradio随便做一个local_host出来算了，不搞网站了。
+
 
 ## 中文说明
 
